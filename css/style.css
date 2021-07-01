@@ -16,6 +16,12 @@ footer {
     width: 100%;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .layout {
     width: 80%;
     margin: 20px auto;
@@ -24,14 +30,13 @@ footer {
 .top-layout {
     width: 100%;
     height: 100px;
-    background-color: hotpink;
+    background-color: rgb(207, 114, 211);
     margin-bottom: 20px;
 }
 
 .center-layout {
     width: 100%;
-    height: 800px;
-    background-color: indianred;
+    height: 900px;
     margin-bottom: 10px;
 }
 
@@ -42,7 +47,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.articles {
+.articles-layout {
     width: 100%;
     height: calc(60% - 10px);
     background-color: rgb(46, 89, 207);
@@ -50,6 +55,35 @@ footer {
 
 .bot-layout {
     width: 100%;
-    height: 100px;
-    background-color: hotpink;
+    height: 60px;
+    background-color: rgb(81, 0, 128);
+}
+
+.container-articles { 
+    height: calc(85% - 30px);
+    margin: 15px 0;
+}
+
+.bkg-articles {
+    background-color: rgb(125, 200, 207);
+}
+
+.cnt-articles {
+    float: left;
+    height: 100%;
+}
+
+.side-column {
+    width: 15%;
+    
+}
+
+.center-column {
+    width: calc(70% - 20px);
+    margin: 0px 10px;
+}
+
+#top-articles {
+    width: 100%;
+    height: 15%;
 }
